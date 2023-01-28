@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grup E - BELISKUY</title>
+    <link rel="stylesheet" type="text/css" href="../css/webstyle.css" />
+    <link rel="stylesheet" type="text/css" href="../css/signup.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="../js/signup.js" defer></script>
+
+  </head>
+          <!-- header -->
+        <div class="main">
+            <div class="social_media">
+                <div class="media_container">
+                    <ul>
+                        <li>
+                            <a href="https://id-id.facebook.com/"
+                                ><i class="fab fa-facebook"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/"
+                                ><i class="fab fa-youtube"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/"
+                                ><i class="fab fa-instagram"></i
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <header>
+                <div class="nav_container">
+                    <span id="sidebar-btn" onclick="openNav()">&#9776;</span>
+                    <div class="logo_container">
+                        <div id="logo"></div>
+                        <div id="logo_name"></div>
+                    </div>
+                    <div id="navi-bar">
+                        <a href="#" id="close-btn" onclick="closeNav()"
+                            >&times;</a
+                        >
+                        <ul>
+                            <li class="navi">
+                                <a href="./website.html">HOME</a>
+                            </li>
+                            <li class="navi">
+                                <a href="./cart.html">CART</a>
+                            </li>
+                            <li class="navi">
+                                <a href="./chat.html">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="user-profile">
+                        <a id="profile" href="./profile.html"></a>
+                    </div>
+                </div>
+            </header>
+  <body>
+      
+
+        <!-- form register -->
+              <div class="wrapper">
+                <div class="heading">
+                  <h1>Sign Up</h1>
+                </div>
+               <div class="form">
+                  <form action="" name="register">
+                    <span>
+                      <input type="text" name="Username" placeholder="Username" required>
+                    </span><br>
+                    <span>
+                      <input type="email" name="Email" placeholder="Email" required>
+                    </span><br>
+                    <span>
+                      <input type="password" name="Password" placeholder="Password" required>
+                    </span><br>
+                    <span>
+                      <input type="password" name="Conf_Pass" placeholder="Confirm Password" required>
+                    </span><br>                    
+                    <span>
+                      <input id="dateInput" type="date" name="Date" placeholder="Date" required>
+                    </span><br>
+                    <div>
+                      <span id="gender_input">
+                      <input type="radio" name="gender">Male
+                      <input type="radio" name="gender">Female
+                    </span><br>
+                    </div>
+                    <div id="terms_container">
+                      <input id="terms" type="checkbox" required> I accept the term and condition
+                    <br>
+                    </div>
+                      <button type="reset" onclick="return validateForm()">Sign Up</button>
+          </div></form>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer class="webfoot">
+          <small> Copyright &copy; 2022 - Grup E, All Rights Reserved.</small>
+      </footer>
+    </div>
+  </body>
+</html>

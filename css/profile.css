@@ -1,0 +1,516 @@
+/* Awal dari webstyle.css */
+:root {
+    --primaryColor: #8bfe00;
+    --secondaryColor: #ececec;
+    --tertiaryColor: #404858;
+    --bgColor: #f9f9f9;
+    --textColor1: #8bfe00;
+    --textColor2: #92b60d;
+    --textColor3: #ffc300;
+    --mainTransition: all 0.5s linear;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.main {
+    background-color: #fff;
+}
+.media_container {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+.social_media {
+    padding: 5px 0px;
+    background-color: #8bfe00;
+}
+.social_media ul li {
+    display: inline-block;
+    color: var(--tertiaryColor);
+    margin-right: 10px;
+}
+.nav_container {
+    padding-left: 30px;
+    height: 8vh;
+    background-color: var(--tertiaryColor);
+    /* display: flex; */
+}
+.logo_container {
+    padding-left: 20px;
+    height: 100%;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    float: left;
+}
+#logo {
+    height: 80%;
+    width: 15%;
+    background-image: url("../img/HCI_Blueprint_22.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: rotatelogo 7s infinite;
+    transition: all 2s none 1s;
+}
+@keyframes rotatelogo {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: translateX(-1.25rem) rotateY(180deg);
+        background-image: url("../img/HCI_Blueprint_04.jpg");
+    }
+    99.999% {
+        transform: rotateY(360deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+#logo_name {
+    height: 80%;
+    width: 50%;
+    background-image: url("../img/HCI_Blueprint_28.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+header h1 {
+    float: left;
+    padding: 15px 0px;
+    color: #8bfe00;
+}
+header ul {
+    float: right;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-self: flex-end;
+}
+header ul li {
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+header ul li a {
+    padding: 1.38rem 2.2rem;
+    color: var(--textColor1);
+}
+
+.navi {
+    font-size: 1.2rem;
+}
+header ul .navi:hover {
+    background-color: #8bfe00;
+}
+header ul .navi:hover a {
+    color: #fff;
+}
+
+.active {
+    background-color: #8bfe00;
+}
+.active a {
+    color: #fff;
+}
+.profile-section {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#profile {
+    height: 80%;
+    /* padding-left: 0.5rem; */
+    margin-left: 0.8rem;
+    justify-items: center;
+    background-image: url("../img/HCI_Blueprint_25-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+section {
+    padding: 1rem 0;
+}
+.categories {
+    background-color: var(--bgColor);
+    padding: 0.8rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.category_container {
+    width: 80%;
+}
+
+.pointer {
+    cursor: pointer;
+    width: 35%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+section h3 {
+    text-align: center;
+    padding: 20px 0;
+    color: var(--textColor1);
+}
+
+.products {
+    background-color: var(--secondaryColor);
+    width: 100%;
+    height: 50vh;
+    padding-top: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+}
+
+.box {
+    color: var(--textcolor2);
+}
+.box:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+footer {
+    position: relative;
+    height: 7.5vh;
+    width: 100%;
+    font-size: 0.85rem;
+    background-color: #0f1e1c;
+    color: var(--textColor3);
+    text-align: center;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body {
+    border: 1px solid black;
+    margin: 0;
+    padding-top: 40px;
+    border-radius: 10px;
+    color: black;
+    background: white;
+    position: relative;
+    height: 100%;
+}
+
+.account-settings .user-profile {
+    margin: 0 0 1rem 0;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.account-settings .user-profile .user-avatar {
+    margin: 0 0 1rem 0;
+}
+.account-settings .user-profile .user-avatar img {
+    width: 90px;
+    height: 90px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
+.account-settings .user-profile h5.user-name {
+    margin: 0 0 0.5rem 0;
+}
+.account-settings .user-profile h6.user-email {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #404858;
+}
+
+.account-settings .about {
+    margin: 2rem 0 0 0;
+    text-align: center;
+}
+.account-settings .about h5 {
+    margin: 0 0 15px 0;
+    color: #007ae1;
+}
+.account-settings .about p {
+    font-size: 0.825rem;
+}
+
+.form-group {
+    border: 1px solid black;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: 0.825rem;
+    background: white;
+    color: black;
+}
+
+a {
+    color: inherit;
+    text-decoration: none !important;
+}
+.main {
+    background-color: #fff;
+}
+.social_media {
+    padding: 5px 0px;
+    background-color: #33fe009c;
+    height: 5vh;
+}
+
+.media_container {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+.social_media ul li {
+    display: inline-block;
+    color: var(--tertiaryColor);
+    margin-right: 10px;
+}
+.social_media i {
+    color: var(--tertiaryColor);
+}
+header {
+    height: 7.5vh;
+}
+header h1 {
+    float: left;
+    padding: 15px 0px;
+    color: var(--textColor1);
+}
+header ul {
+    float: right;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-self: flex-end;
+}
+header ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+header ul li a {
+    padding: 1.38rem 2.2rem;
+    color: var(--textColor1);
+}
+
+#sidebar-btn {
+    float: left;
+    height: 100%;
+    font-size: 2rem;
+    margin-right: 0.5rem;
+    color: var(--primaryColor);
+    display: none;
+    cursor: pointer;
+}
+#close-btn {
+    display: none;
+    color: var(--primaryColor);
+    font-size: 2rem;
+}
+.navi {
+    font-size: 1.2rem;
+}
+header ul .navi:hover {
+    background-color: #8bfe00;
+}
+header ul .navi:hover a {
+    color: #fff;
+}
+
+.active {
+    background-color: #8bfe00;
+}
+.active a {
+    color: #fff;
+}
+.nav_container {
+    padding-left: 30px;
+    height: 100%;
+    background-color: var(--tertiaryColor);
+    position: relative;
+    display: flex;
+}
+#navi-bar {
+    height: 100%;
+    width: 65%;
+    /* width: 100%; */
+    float: right;
+}
+.container:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+.logo_container {
+    /* padding-left: 20px; */
+    height: 100%;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    float: left;
+}
+#logo {
+    height: 80%;
+    width: 15%;
+    background-image: url("../img/HCI_Blueprint_22.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: rotatelogo 7s infinite;
+    transition: all 2s none 1s;
+    /* animation-timing-function: cubic-bezier(0.1, 100, 1, 0); */
+}
+@keyframes rotatelogo {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: translateX(-1.25rem) rotateY(180deg);
+        background-image: url("../img/HCI_Blueprint_04.jpg");
+    }
+    99.999% {
+        transform: rotateY(360deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+#logo_name {
+    height: 80%;
+    width: 50%;
+    margin-top: 0.1rem;
+    background-image: url("../img/HCI_Blueprint_28.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#user-profile {
+    width: 4.8%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+#profile {
+    height: 80%;
+    width: 100%;
+    /* padding-left: 0.5rem; */
+    margin-left: 0.8rem;
+    justify-items: center;
+    background-image: url("../img/HCI_Blueprint_25-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media screen and (min-width: 1000px) {
+    #navi-bar {
+        width: 065%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    header ul {
+        float: right;
+        display: initial;
+    }
+    #sidebar-btn {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        color: var(--primaryColor);
+        display: initial;
+        cursor: pointer;
+    }
+    #close-btn {
+        display: none;
+        color: var(--primaryColor);
+        font-size: 2rem;
+    }
+    #navi-bar {
+        /* 160px */
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: var(--tertiaryColor);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 50px;
+    }
+    #close-btn {
+        display: initial;
+        position: absolute;
+        right: 0;
+        top: 0;
+        float: right;
+        padding: 1rem;
+    }
+    #user-profile {
+        width: 10%;
+    }
+
+    #logo {
+        height: 80%;
+        width: 20%;
+        background-image: url("../img/HCI_Blueprint_22.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation: rotatelogo 7s infinite;
+        transition: all 2s none 1s;
+        margin-right: 1rem;
+        /* animation-timing-function: cubic-bezier(0.1, 100, 1, 0); */
+    }
+
+    @keyframes rotatelogo {
+        0% {
+            transform: rotateY(0deg);
+        }
+        50% {
+            transform: rotateY(180deg);
+            background-image: url("../img/HCI_Blueprint_04.jpg");
+        }
+        99.999% {
+            transform: rotateY(360deg);
+        }
+        100% {
+            transform: rotateY(0deg);
+        }
+    }
+    #logo_name {
+        height: 80%;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .profile-section {
+        height: 80vh;
+        margin-top: 1rem;
+        overflow: scroll;
+        align-items: baseline;
+    }
+}
+/* Akhir dari css profile dari website */

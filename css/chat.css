@@ -1,0 +1,285 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+:root {
+    --primaryColor: #8bfe00;
+    --secondaryColor: #ececec;
+    --tertiaryColor: #404858;
+    --bgColor: #f9f9f9;
+    --textColor1: #8bfe00;
+    --textColor2: #92b60d;
+    --textColor3: #ffc300;
+    --mainTransition: all 0.5s linear;
+}
+
+html,
+body {
+    background: #00fe0d4b; /* background pada chat bar */
+    opacity: (0.8);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px auto;
+}
+::selection {
+    /* selection itu buat block tulisan pakai mouse */
+    background: rgba(16, 153, 207, 0.3);
+    color: inherit;
+}
+
+/* Menu */
+
+.menu {
+    /* Edit ukuran dan warna pada header / menu bar */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 50px;
+    background: var(--tertiaryColor);
+    z-index: 100;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.back {
+    /* Edit untuk ikon "<" back pada header */
+    position: absolute;
+    width: 90px;
+    height: 50px;
+    top: 0px;
+    left: 0px;
+    color: white;
+    line-height: 50px;
+    font-size: 30px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.back img {
+    /* Edit untuk ikon BeliSkuy */
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    margin-left: 15px;
+}
+.back-btn {
+    color: var(--bgColor);
+}
+.back:active {
+    /* Edit warna background ketika kita mau klik ikon "<" back, coba ikonnya ditahan */
+    background: rgba(255, 255, 255, 0.2);
+}
+.name {
+    position: absolute;
+    top: 3px;
+    left: 110px;
+    font-family: "Lato";
+    font-size: 25px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.98);
+    cursor: default;
+}
+
+/* SMS */
+
+.chat {
+    list-style: none;
+    background: none;
+    height: 100vh;
+    margin: 0;
+    padding: 0 0 50px 0;
+    padding-top: 4rem;
+    margin-bottom: 10px;
+}
+.chat li {
+    padding: 0.5rem;
+    overflow: hidden;
+    display: flex;
+}
+.chat .avatar {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    display: block;
+    z-index: 2;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.chat .avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.chat .day {
+    /*Mengatur kata dan garis pada kata "Now" */
+    position: relative;
+    display: block;
+    text-align: center;
+    color: black;
+    height: 20px;
+    text-shadow: 7px 0px 0px white, 6px 0px 0px white, 5px 0px 0px white,
+        4px 0px 0px #e5e5e5, 3px 0px 0px #e5e5e5, 2px 0px 0px #e5e5e5,
+        1px 0px 0px #e5e5e5, 1px 0px 0px #e5e5e5, 0px 0px 0px #e5e5e5,
+        -1px 0px 0px #e5e5e5, -2px 0px 0px #e5e5e5, -3px 0px 0px #e5e5e5,
+        -4px 0px 0px #e5e5e5, -5px 0px 0px #e5e5e5, -6px 0px 0px #e5e5e5,
+        -7px 0px 0px #e5e5e5;
+    box-shadow: inset 20px 0px 0px #e5e5e5, inset -20px 0px 0px #e5e5e5,
+        inset 0px -2px 0px #d7d7d7;
+    line-height: 38px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    cursor: default;
+}
+
+/* CS --> Mengatur ikon atau avatar pada chat customer service BS */
+.CS .msg {
+    order: 1;
+    border-top-left-radius: 0px;
+    box-shadow: -1px 2px 0px #d4d4d4;
+}
+.CS:before {
+    content: "";
+    position: relative;
+    top: 0px;
+    right: 0px;
+    left: 40px;
+    width: 0px;
+    height: 0px;
+    border: 5px solid #404858; /* Bentuknya mirip segitiga pythagoras pada bagian kanan atas ikon BS */
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+
+/* user --> Mengatur ikon atau avatar pada chat pengguna BS */
+.user {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.user .msg {
+    order: 1;
+    border-bottom-right-radius: 0px;
+}
+.user .avatar {
+    order: 2;
+}
+.user .avatar:after {
+    /* Bentuknya mirip segitiga pythagoras pada bagian kiri bawah ikon pengguna */
+    content: "";
+    position: relative;
+    display: inline-block;
+    bottom: 19px;
+    right: 0px;
+    width: 0px;
+    height: 0px;
+    border: 5px solid #404858;
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
+
+.msg {
+    /* Message bar atau background message */
+    background: #404858;
+    min-width: 50px;
+    padding: 10px;
+    border-radius: 2px;
+}
+.msg p {
+    /*Warna dan ukuran tulisan pada bar message */
+    font-size: 0.8rem;
+    margin: 0 0 0.2rem 0;
+    color: white;
+}
+.msg img {
+    /* Ukuran pada ikon message */
+    position: relative;
+    display: block;
+    width: 450px;
+    border-radius: 5px;
+    transition: all 0.4s cubic-bezier(0.565, -0.26, 0.255, 1.41);
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+@media screen and (max-width: 800px) {
+    .msg img {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .msg img {
+        width: 200px;
+    }
+}
+
+.msg time {
+    /* Waktu yang tertera pada bar message */
+    font-size: 0.7rem;
+    color: white;
+    margin-top: 3px;
+    float: right;
+    cursor: default;
+}
+
+@-webikt-keyframes pulse {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+
+/* Mengatur warna dan ukuran pada scroll bar */
+::-webkit-scrollbar {
+    min-width: 12px;
+    width: 12px;
+    max-width: 12px;
+    min-height: 12px;
+    height: 12px;
+    max-height: 12px;
+    background: #e5e5e5;
+    box-shadow: inset 0px 50px 0px #fafafa, inset 0px -52px 0px #fafafa;
+}
+
+::-webkit-scrollbar-button {
+    display: block;
+    height: 26px;
+}
+
+/* Type */
+
+input.textarea {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 50px;
+    z-index: 99;
+    background: #404858; /* Warna pada bar bawah saat kita mau mengetik sesuatu */
+    border: none;
+    outline: none;
+    padding-left: 55px;
+    padding-right: 55px;
+    color: white; /* warna pada teks yang ingin diketik pada bar */
+    font-weight: 400;
+}

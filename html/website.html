@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Grup E - BELISKUY</title>
+        <link rel="stylesheet" type="text/css" href="../css/webstyle.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="../js/gallery.js"></script>
+        <script src="https://kit.fontawesome.com/5f0f0f2d20.js"></script>
+    </head>
+    <body>
+        <!-- header -->
+        <div class="main">
+            <div class="social_media">
+                <div class="media_container">
+                    <ul>
+                        <li>
+                            <a href="https://id-id.facebook.com/"
+                                ><i class="fab fa-facebook"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/"
+                                ><i class="fab fa-youtube"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/"
+                                ><i class="fab fa-instagram"></i
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <header>
+                <div class="nav_container">
+                    <span id="sidebar-btn" onclick="openNav()">&#9776;</span>
+                    <div class="logo_container">
+                        <div id="logo"></div>
+                        <div id="logo_name"></div>
+                    </div>
+                    <div id="navi-bar">
+                        <a href="#" id="close-btn" onclick="closeNav()"
+                            >&times;</a
+                        >
+                        <ul>
+                            <li class="active navi">
+                                <a href="./website.html">HOME</a>
+                            </li>
+                            <li class="navi">
+                                <a href="./cart.html">CART</a>
+                            </li>
+                            <li class="navi">
+                                <a href="./chat.html">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="user-profile">
+                        <a id="profile" href="./profile.html"></a>
+                    </div>
+                </div>
+            </header>
+
+            <!-- banner -->
+            <section class="banner">
+                <i
+                    class="fas fa-angle-double-left icon-stroke"
+                    id="slide-left"
+                ></i>
+
+                <div class="banner_img" id="welcome">
+                    <img src="../img/banner2.jpg" alt="WELCOME" />
+                    <h2>WELCOME TO BELISKUY</h2>
+                </div>
+                <!-- <div class="banner_img">
+                    <img
+                        src="../img/Christmas sale banner template - Dibuat dengan PosterMyWall.jpg"
+                        alt="Christmas_Sale"
+                    />
+                </div> -->
+                <div class="banner_img">
+                    <img
+                        src="../img/Gothic New Years Retail Sale Banner - Dibuat dengan PosterMyWall.jpg"
+                        alt="new years"
+                    />
+                </div>
+
+                <div class="banner_img" id="christmas">
+                    <img src="../img/banner2.webp" alt="christmas" />
+                </div>
+
+                <i
+                    class="fas fa-angle-double-right icon-stroke"
+                    id="slide-right"
+                ></i>
+            </section>
+
+            <!-- about -->
+            <section class="categories">
+                <div class="category_container">
+                    <div class="box">
+                        <div class="col-5">
+                            <div class="pointer" id="all">
+                                <div class="icon">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </div>
+                                <h4>ALL</h4>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="pointer" id="clothes">
+                                <div class="icon active_category">
+                                    <i class="fas fa-tshirt"></i>
+                                </div>
+                                <h4>CLOTHES</h4>
+                            </div>
+                        </div>
+
+                        <div class="col-5">
+                            <div class="pointer" id="shoes">
+                                <div class="icon">
+                                    <i class="fas fa-shoe-prints"></i>
+                                </div>
+                                <h4>SHOES</h4>
+                            </div>
+                        </div>
+
+                        <div class="col-5">
+                            <div class="pointer" id="pants">
+                                <div class="icon">
+                                    <i class="fas fa-male"></i>
+                                </div>
+                                <h4>PANTS</h4>
+                            </div>
+                        </div>
+
+                        <div class="col-5">
+                            <div class="pointer" id="dress">
+                                <div class="icon">
+                                    <i class="fas fa-female"></i>
+                                </div>
+                                <h4>DRESS</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- <section class="about">
+                    <div class="container">
+                        <h3>ABOUT</h3>
+                        <p>
+                            BeliSkuy adalah sebuah toko online yang menjual
+                            pakaian, sepatu, dan celana.
+                            <strong
+                                >BeliSkuy telah tersedia dalam bentuk situs web
+                                dan aplikasi mobile,</strong
+                            >
+                            sehingga dapat membantu para pelanggan untuk membeli
+                            pakaian, celana, dan sepatu dengan cepat, mudah, dan
+                            online.
+                        </p>
+                    </div>
+                </section> -->
+
+            <!--services-->
+            <section class="products">
+                <div class="product_container">
+                    <div class="box" id="content_box">
+                        <div class="col-6">
+                            <div class="product_box">
+                                <div class="product_image">
+                                    <img
+                                        class="image"
+                                        src="../img/dark_blue_shirt.png"
+                                    />
+                                </div>
+                                <div class="product_detail">
+                                    <p>Dark blue Shirt</p>
+                                    <p>Rp100.000,00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="product_box">
+                                <div class="product_image">
+                                    <img
+                                        class="image"
+                                        src="../img/blue_shirt.png"
+                                    />
+                                </div>
+                                <div class="product_detail">
+                                    <p>Blue Shirt</p>
+                                    <p>Rp50.000,00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="product_box">
+                                <div class="product_image">
+                                    <img
+                                        class="image"
+                                        src="../img/light_blue_shirt.png"
+                                    />
+                                </div>
+                                <div class="product_detail">
+                                    <p>Light blue Shirt</p>
+                                    <p>Rp70.000,00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="product_box">
+                                <div class="product_image">
+                                    <img
+                                        class="image"
+                                        src="../img/white_shirt.png"
+                                    />
+                                </div>
+                                <div class="product_detail">
+                                    <p>White Shirt</p>
+                                    <p>Rp60.000,00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="product_box">
+                                <div class="product_image">
+                                    <img
+                                        class="image"
+                                        src="../img/white_shirt.png"
+                                    />
+                                </div>
+                                <div class="product_detail">
+                                    <p>White Shirt</p>
+                                    <p>Rp60.000,00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="product_box">
+                                <div class="product_image">
+                                    <img
+                                        class="image"
+                                        src="../img/white_shirt.png"
+                                    />
+                                </div>
+                                <div class="product_detail">
+                                    <p>White Shirt</p>
+                                    <p>Rp60.000,00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="product_box">
+                                <div class="product_image">
+                                    <img
+                                        class="image"
+                                        src="../img/dark_blue_shirt.png"
+                                    />
+                                </div>
+                                <div class="product_detail">
+                                    <p>Dark blue Shirt</p>
+                                    <p>Rp100.000,00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="product_box">
+                                <div class="product_image">
+                                    <img
+                                        class="image"
+                                        src="../img/blue_shirt.png"
+                                    />
+                                </div>
+                                <div class="product_detail">
+                                    <p>Blue Shirt</p>
+                                    <p>Rp50.000,00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="product_box">
+                                <div class="product_image">
+                                    <img
+                                        class="image"
+                                        src="../img/light_blue_shirt.png"
+                                    />
+                                </div>
+                                <div class="product_detail">
+                                    <p>Light blue Shirt</p>
+                                    <p>Rp70.000,00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="product_box">
+                                <div class="product_image">
+                                    <img
+                                        class="image"
+                                        src="../img/white_shirt.png"
+                                    />
+                                </div>
+                                <div class="product_detail">
+                                    <p>White Shirt</p>
+                                    <p>Rp60.000,00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="product_box">
+                                <div class="product_image">
+                                    <img
+                                        class="image"
+                                        src="../img/white_shirt.png"
+                                    />
+                                </div>
+                                <div class="product_detail">
+                                    <p>White Shirt</p>
+                                    <p>Rp60.000,00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="product_box">
+                                <div class="product_image">
+                                    <img
+                                        class="image"
+                                        src="../img/white_shirt.png"
+                                    />
+                                </div>
+                                <div class="product_detail">
+                                    <p>White Shirt</p>
+                                    <p>Rp60.000,00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- footer -->
+        <footer class="webfoot">
+            <small> Copyright &copy; 2022 - Grup E, All Rights Reserved.</small>
+        </footer>
+    </body>
+</html>
